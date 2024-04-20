@@ -1,0 +1,21 @@
+- Link for Installing Material UI Library
+* https://mui.com/material-ui/getting-started/installation/
+- Link for Installing Tailwind
+* https://tailwindcss.com/docs/guides/create-react-app
+* Note: there are some steps you must do which are available in the link above
+* Note: Also don't forget a link to install the mui icons
+
+
+Notes:
++ Anything you put in index.css is applicable and reachable to the whole application
++ After installing react-router-dom make sure to provide the routing before starting to use it
++ While implementing the UrlParams beware with "WHITE SPACES" they will cause the "20%20%" in your params
++ Using dispatch before setting the data first is a big mistak (CreateTask.jsx - handleSubmit)
+
+
+LEARNED:
++ How to format a date (CreateTask.jsx - formatDate)
++ Url Query params (SideBar.jsx - handleMenuChange)
+
+
+
