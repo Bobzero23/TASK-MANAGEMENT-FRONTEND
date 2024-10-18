@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchTasks } from "./reduxToolkit/TaskSlice";
 import { getUserProfile } from "./reduxToolkit/AuthSlice";
+import { Box } from "@mui/material";
 
 function App() {
   const { task, auth } = useSelector((store) => store);
@@ -20,10 +21,10 @@ function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       {auth.user ? (
-        <div>
+        <Box width="100%" sx={{ width: "100%" }}>
           <Navbar />
           <Home />
-        </div>
+        </Box>
       ) : (
         <Auth />
       )}
